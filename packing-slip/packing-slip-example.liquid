@@ -2,6 +2,7 @@
 
 <!-- DATA -->
 {% assign phone_number = "+49 1234 12345678" %}
+{% assign customer_service_times = "Mo. - Fr., 9:00 - 18:00 Uhr" %}
 {% assign contact_person = "Manfred Mustermann" %}
 {% assign managing_director = "Manfred Mustermann" %}
 {% assign register_number = "HRB 123456, Berlin" %}
@@ -9,8 +10,9 @@
 
 <!-- NOTES -->
 {% assign thank_you_note = "Vielen Dank für Ihre Bestellung." %}
-{% assign not_all_line_items_includes_message = "Es gibt weitere Artikel aus Ihrer Bestellung, die nicht in dieser Lieferung enthalten sind." %}
-{% assign footer_notice = "Dies ist der Footer Notice. Dies ist der Footer Notice. Dies ist der Footer Notice. Dies ist der Footer Notice." %}
+{% assign not_all_line_items_included_note = "Es gibt weitere Artikel aus Ihrer Bestellung, die nicht in dieser Lieferung enthalten sind." %}
+{% assign footer_note = "Dies ist der Footer Notice. Dies ist der Footer Notice. Dies ist der Footer Notice. Dies ist der Footer Notice." %}
+{% assign liefer_vermerk = "Bücher- und Warensendung (BÜWA)" %}
 
 
 <!-- BODY BODY BODY -->
@@ -25,7 +27,7 @@
     <u>Acme GmbH | Rücksendestraße. 80 | 80000 München</u>
   </div>
   <div class="vermerkzone">
-    <i>Bücher- und Warensendung (BÜWA)</i>
+    <i>{{ liefer_vermerk }}</i>
   </div>
   <div class="anschriftzone">
     Manfred Mustermann<br />
@@ -54,7 +56,7 @@
         </tr>
         <tr>
           <td>Kundenservice:</td>
-          <td>Mo. - Fr., 9:00 - 18:00 Uhr</td>
+          <td>{{ customer_service_times }}</td>
         </tr>
         <tr>
           <td>&nbsp;</td>
@@ -79,7 +81,7 @@
       Lieferschein
       <span style="font-size: 10pt">für Bestellung #1001</span>
     </h1>
-    <p style="font-size: 8pt">Es gibt weitere Artikel aus Ihrer Bestellung, die nicht in dieser Lieferung enthalten sind.</p>
+    <p style="font-size: 8pt">{{ not_all_line_items_included_note }}</p>
     <table>
       <thead>
         <tr>
@@ -114,7 +116,7 @@
   <div class="seitenangabe"></div>
   <div class="fusszeile">
     <p style="font-size: 8pt">
-      {{ footer_notice }}
+      {{ footer_note }}
     </p>
     <table>
       <tbody>
