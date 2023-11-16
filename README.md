@@ -16,7 +16,8 @@ It looks like this:
 
 ## Caveats
 
-The packing slip liquid works for orders/fulfillments that are not longer than a DIN-A4 page. If you have more items, leading to the content breaking to a second page, you need to adjust this template, otherwise things will break. Removing the height on the `.din-5008` class and then fixing things up probably will be enough. But our current use case doesn't require this, so we didn't bother. If you fix this, please submit a PR.
+- The packing slip liquid works for orders/fulfillments that are not longer than a DIN-A4 page. If you have more items, leading to the content breaking to a second page, you need to adjust this template, otherwise things will break. Removing the height on the `.din-5008` class and then fixing things up probably will be enough. But our current use case doesn't require this, so we didn't bother. If you fix this, please submit a PR.
+- When printing, make sure you print at 100%. Some prining software (looking at you MacOS) wants to scale the PDF, which will lead to things being slightly off.
 
 ## Acknowledgements
 
