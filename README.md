@@ -6,7 +6,7 @@ This is a repository of [DIN-5008](https://de.wikipedia.org/wiki/DIN_5008) confo
 
 _"Lol, why?"_
 
-Because in Germany we have envelopes and 'shipping bags' with little windows in them, and you need the shipping address to be in the right place for it to be visible in that window. And being DIN-5008 conformant ensures that. Also, you need to fold the paper in a specific way. True story.
+Because in Germany we have envelopes and 'shipping bags' with little windows in them, and you need the shipping address to be in the right place for it to be visible in that window. And being DIN-5008 conformant ensures that. Also, you need to fold the paper in a specific way (that's what the markings on the left edge are for). True story.
 
 Anyways, so far, we have the [packing slip](https://help.shopify.com/en/manual/shipping/setting-up-and-managing-your-shipping/packing-slips-variable-list).
 
